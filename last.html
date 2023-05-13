@@ -1,0 +1,19 @@
+<body style="background-color:azure;">
+    <h1>Welcome to your profile, <span id="fname"></span>!</h1>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Address:</strong> <span id="address"></span></p>
+    <p><strong>comment:</strong> <span id="comment"></span></p>
+  
+    <script type="text/javascript">
+        
+      // Retrieve user from localStorage
+      const user = JSON.parse(localStorage.getItem("user"));
+  
+      // Set values in HTML elements
+      document.getElementById("fname").textContent = user.fname;
+      document.getElementById("email").textContent = user.email;
+      document.getElementById("address").textContent = user.address;
+      document.getElementById("comment").textContent = user.comment;
+    </script>
+  </body>
+  
